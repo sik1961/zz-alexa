@@ -1,4 +1,4 @@
-# zz-met-office-data
+# zz-alexa
 Store and analyse Met Office historic data
 This project reads historic weather data from the Met Office's web site and stores it for analysis and reporting.
 

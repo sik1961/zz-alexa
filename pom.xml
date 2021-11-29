@@ -4,12 +4,6 @@
   <artifactId>zz-alexa</artifactId>
   <version>1.0.1-SNAPSHOT</version>
   <name>Alexa Sandbox</name>
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.3.9.RELEASE</version>
-		<relativePath/>
-	</parent>
   <build>
 		<plugins>
 			<plugin>
@@ -26,7 +20,8 @@
 					<configuration>
   						<archive>
     						<manifest>
-								<mainClass>com.sik.alexa.Application</mainClass>
+								<mainClass>com.sik.alexa.main.HelloWorldStreamHandlercd ..
+								</mainClass>
 								<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
               					<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
     						</manifest>
@@ -44,7 +39,7 @@
                         <configuration>
                             <classifier>jwd</classifier>
                             <finalName>zz-alexa</finalName>
-                            <mainClass>com.sik.alexa.Application</mainClass>
+                            <mainClass>com.sik.alexa.main.HelloWorldStreamHandler</mainClass>
                         </configuration>
                     </execution>
                 </executions>
@@ -71,61 +66,23 @@
 	    <artifactId>ask-sdk</artifactId>
 	    <version>2.0.0</version>
 	   </dependency>
-  	<dependency>
-  		<groupId>org.jsoup</groupId>
-  		<artifactId>jsoup</artifactId>
-  		<version>1.14.2</version>
-  	</dependency>
 	  <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
-	  <dependency>
-		  <groupId>org.apache.commons</groupId>
-		  <artifactId>commons-lang3</artifactId>
-		  <version>3.9</version>
-	  </dependency>
+<!--	  <dependency>-->
+<!--		  <groupId>org.apache.commons</groupId>-->
+<!--		  <artifactId>commons-lang3</artifactId>-->
+<!--		  <version>3.9</version>-->
+<!--	  </dependency>-->
 	  <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
-	  <dependency>
-		  <groupId>org.apache.poi</groupId>
-		  <artifactId>poi</artifactId>
-		  <version>4.1.2</version>
-	  </dependency>
+<!--	  <dependency>-->
+<!--		  <groupId>org.apache.poi</groupId>-->
+<!--		  <artifactId>poi</artifactId>-->
+<!--		  <version>4.1.2</version>-->
+<!--	  </dependency>-->
 	  <dependency>
 		  <groupId>org.projectlombok</groupId>
 		  <artifactId>lombok</artifactId>
 		  <version>RELEASE</version>
 		  <scope>compile</scope>
 	  </dependency>
-	  <dependency>
-		  <groupId>org.springframework.boot</groupId>
-		  <artifactId>spring-boot-starter-parent</artifactId>
-		  <version>2.3.9.RELEASE</version>
-		  <type>pom</type>
-	  </dependency>
-	  <dependency>
-		  <groupId>org.springframework.boot</groupId>
-		  <artifactId>spring-boot-starter-security</artifactId>
-	  </dependency>
-	  <dependency>
-		  <groupId>org.springframework.boot</groupId>
-		  <artifactId>spring-boot-starter-actuator</artifactId>
-	  </dependency>
-	  <dependency>
-		  <groupId>org.springframework.boot</groupId>
-		  <artifactId>spring-boot-starter-web</artifactId>
-	  </dependency>
-	  <dependency>
-		  <groupId>org.springframework.boot</groupId>
-		  <artifactId>spring-boot-starter-test</artifactId>
-		  <scope>test</scope>
-	  </dependency>
-	  <dependency>
-		  <groupId>org.springframework.security</groupId>
-		  <artifactId>spring-security-web</artifactId>
-	  </dependency>
-	  <dependency>
-		  <groupId>org.springframework.security</groupId>
-		  <artifactId>spring-security-config</artifactId>
-	  </dependency>
-
-
   </dependencies>
 </project>
